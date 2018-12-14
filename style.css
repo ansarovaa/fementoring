@@ -389,3 +389,8 @@ button:hover {
   margin: 30px;
   animation: fade-in-up .25s ease forwards;
 }
+
+.survey-body {
+  padding: 100px 0 0 10px;
+  text-align: center;
+}

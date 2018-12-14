@@ -2,12 +2,12 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css\bootstrap.css">
-
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css\bootstrap.css">
+    <link rel="stylesheet" href="css\bootstrap-grid.css">
     <link rel="stylesheet" href="style.css">
-    <title>Personal blog</title>
+    <title>Survey</title>
     <meta name="description" content="Front end student work">
     <meta name="keywords" content="HTML,CSS,JavaScript">
     <meta name="author" content="Anar Ansarova">
@@ -35,8 +35,72 @@
             </ul>
         </div>
     </div>
+    <div class="survey-body">
 
 
+        <div class="survey-header">
+            <h1 class="display-2">Survey</h1>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="emailControlInput">Enter your email</label>
+                <input type="email" class="form-control" id="emailControlInput" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label for="interestFormSelect">What's the most interesting for you?</label>
+                <select class="form-control" id="interestFormSelect">
+                    <option>Travelling</option>
+                    <option>Hiking</option>
+                    <option>Dancing</option>
+                    <option>Art</option>
+                    <option>Reading books</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="interestTextArea">Own variant</label>
+                <textarea class="form-control" id="interestTextArea" rows="3"></textarea>
+            </div>
+            <label for="favouriteSeason">Your favourite season</label>
+            <div id="favouriteSeason">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="winter">
+                    <label class="form-check-label" for="winter">
+                        Winter
+                    </label>
+
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="summer">
+                    <label class="form-check-label" for="summer">
+                        Summer
+                    </label>
+
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="spring">
+                    <label class="form-check-label" for="spring">
+                        Spring
+                    </label>
+
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="autumn">
+                    <label class="form-check-label" for="autumn">
+                        Autumn
+                    </label>
+
+                </div>
+            </div>
+            <br>
+            <button type="button" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-secondary">Clear form</button>
+
+        </form>
+
+
+
+
+    </div>
 
     <footer class="footer">
         <p>Done by: Anar Ansarova. Contact information: <a href="mailto:anar_ansarova@epam.com">
