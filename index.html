@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <title>It's my profile page</title>
+  <meta name="description" content="Front end student work">
+  <meta name="keywords" content="HTML,CSS,JavaScript">
+  <meta name="author" content="Anar Ansarova">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <div class="header">
+    <input type="checkbox" class="open-sidebar-menu" id="open-sidebar-menu">
+    <label for="open-sidebar-menu" class="sidebar-icon-toggle">
+      <span class="spinner diagonal-part-1"></span>
+      <span class="spinner horizontal"></span>
+      <span class="spinner diagonal-part-2"></span>
+    </label>
+    <div id="sidebar-menu" class="sidebar-menu">
+      <ul class="sidebar-menu-inner">
+        <li><a href="index.html">Profile page</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="videogallery.html">Video Gallery</a></li>
+        <li><a href="personalblog.html">Personal blog</a></li>
+        <li><a href="survey.html">Survey</a></li>
+        <li><a href="https://learn.epam.com/">Learn</a></li>
+        <li><a href="https://heroes.epam.com/">Heroes</a></li>
+        <li><a href="https://telescope.epam.com/who/Anar_Ansarova">Telescope</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div class="main">
+    <div class="about-project">
+      <section class="centerText">
+        <h1>Welcome to my student work page</h1>
+        <p>This work is created for Front end course by Anar Ansarova. I will use <abbr title="Java Script">JS</abbr>,
+          <abbr title="Cascading Style Sheets">CSS</abbr> and <acronym title="HyperText Markup Language">HTML</acronym></p>
+      </section>
+    </div>
+    <br>
+    <div id="fav-quote" class="favourite-quote">
+      <p>My favourite quote from <cite>"Game of Thrones"</cite>. Lannister House motto:</p>
+      <blockquote>
+        Hear me Roar!
+      </blockquote>
+    </div>
+    <div class="header-info">
+      <div class="image-name">
+        <img src="https://content.screencast.com/users/Ansarova/folders/Jing/media/2c7a4e7b-519a-4677-b83f-82facdff8e5f/2018-10-16_1545.png"
+          alt="Anar Ansarova photo" width="150" height="150" />
+      </div>
+      <div id="profile-info" class="profile-info">
+        <h2>Anar Ansarova</h2>
+        <p><strong>Job profile:</strong> Senior Software Testing Engineer <sub>from June 2018</sub></p>
+        <p><strong>Unit:</strong> Mobile Testing Team</p>
+        <p><strong>Primary Skill:</strong> Functional Testing</p>
+        <p><strong>Country, City:</strong> Kazakhstan, Karaganda</p>
+      </div>
+      <div class="city-picture">
+        <img src="https://pandaland.kz/airdraw/499e00d1ad66eca088ca97a8b96b77fc.jpg/550/0" alt="Karaganda photo" width="350"
+          height="150" />
+      </div>
+    </div>
+    <br>
+    <div class="workload">
+      <table id="workload">
+        <thead>
+          <tr>
+            <th>October</th>
+            <th>November</th>
+            <th>December</th>
+            <th>January</th>
+            <th>February</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td colspan="5">EPAM EARD Project</td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+            <td>100%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <div class="skill-list">
+      <button id="show-message" class="show-message">Show skills</button>
+      <p id="primary-skills"></p>
+    </div>
+    <br>
+    <div class="sick-leave">
+      <p id="sick-leave"></p>
+      <button id="take-sick-leave" class="take-sick-leave">Take sick leave</button>
+      <button id="update-sick" class="update-sick">Update sick leave days</button>
+    </div>
+    <br>
+    <div class="manager-list">
+      <p id="managers"></p>
+      <button id="show-rm" class="show-rm">Show RM</button>
+      <button id="show-um" class="show-um">Show UM</button>
+    </div>
+    <br>
+    <div class="nav-gallery">
+      <button id="navigate-gallery" class="navigate-gallery">Open gallery</button>
+    </div>
+    <br>
+    <div class="nav-gallery">
+      <button id="navigate-video-gallery" class="navigate-gallery">Open video gallery</button>
+    </div>
+    <br>
+    <div class="nav-gallery">
+      <button id="navigate-blog-video" class="navigate-gallery">Open personal blog</button>
+    </div>
+    <br>
+    <div class="nav-gallery">
+      <button id="navigate-survey" class="navigate-gallery">Open Survey page</button>
+    </div>
+  </div>
+  <br>
+  <div class="video-space">
+    <video id="vid" poster="img/epam20.png" width="700">
+      <source src="media/epam20.mp4" type="video/mp4">
+      <source src="media/epam20.webm" type="video/webm">
+    </video>
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-1">
+        <input type="range" id="scrubber" min="0" max="14" value="0" step="1">
+      </div>
+      <div class="col-sm-2">
+        <span id="remainingTime">0:00</span> /
+        <span id="totalTime">0:00</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8 text-center">
+        <button class="btn btn-sm" id="playPause">Play</button>
+        <span class="divider">|</span>
+        <button class="btn btn-sm" id="begin">&lt;&lt;</button>
+        <button class="btn btn-sm" id="rewind">&lt;</button>
+        <button class="btn btn-sm" id="fastForward">&gt;</button>
+        <button class="btn btn-sm" id="end">&gt;&gt;</button>
+        <span class="divider">|</span>
+        <button class="btn btn-sm" id="stop">Stop</button>
+      </div>
+    </div>
+    <div class="row push-down-top">
+      <div class="col-sm-3 col-sm-offset-1">
+        <div class="row">
+          <div class="col-sm-8">
+            <input type="range" id="volume" min="0" step="0.1" max="1" title="Volume">
+          </div>
+          <div class="col-sm-1">
+            <button class="btn btn-xs" id="mute">Mute</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-sm-offset-1">
+        <div class="row">
+          <div class="col-sm-2">Speed</div>
+          <div class="col-sm-10">
+            <input type="range" id="playbackRate" min="1" value="1" step="1" max="4" title="Playback Speed">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <footer class="footer">
+    <p>Done by: Anar Ansarova. Contact information: <a href="mailto:anar_ansarova@epam.com">
+        anar_ansarova@epam.com</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
