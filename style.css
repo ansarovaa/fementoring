@@ -215,9 +215,7 @@ th,
 td {
   padding: 10px;
   text-align: center;
-  border: 1px solid;
-  border-collapse: collapse;
-}
+ }
 
 .navigate-gallery a:link {
   text-decoration: none;
@@ -391,6 +389,6 @@ button:hover {
 }
 
 .survey-body {
-  padding: 100px 200px 0 200px;
+  padding: 50px 200px 100px 200px;
   text-align: center;
 }
