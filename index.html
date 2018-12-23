@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="style.css">
+  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -13,6 +13,9 @@
     crossorigin="anonymous"></script>
   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css\bootstrap.css">
+  <link rel="stylesheet" href="css\bootstrap-grid.css">
+  <link rel="stylesheet" href="style.css">
   <title>It's my profile page</title>
   <meta name="description" content="Front end student work">
   <meta name="keywords" content="HTML,CSS,JavaScript">
@@ -22,14 +25,14 @@
 
 <body>
   <div class="header">
-    <input type="checkbox" class="open-sidebar-menu" id="open-sidebar-menu">
-    <label for="open-sidebar-menu" class="sidebar-icon-toggle">
+    <input type="checkbox" class="header_open-sidebar-menu" id="open-sidebar-menu">
+    <label for="open-sidebar-menu" class="header__sidebar-icon-toggle">
       <span class="spinner diagonal-part-1"></span>
       <span class="spinner horizontal"></span>
       <span class="spinner diagonal-part-2"></span>
     </label>
-    <div id="sidebar-menu" class="sidebar-menu">
-      <ul class="sidebar-menu-inner">
+    <div id="sidebar-menu" class="header__sidebar-menu">
+      <ul class="header__sidebar-menu-inner">
         <li><a href="index.html">Profile page</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="videogallery.html">Video Gallery</a></li>
@@ -44,40 +47,40 @@
 
 
 
-  <div class="main">
-    <div class="about-project">
-      <section class="centerText">
+  <div class="profile-information">
+    <div class="profile-information__about-project">
+      <section>
         <h1>Welcome to my student work page</h1>
         <p>This work is created for Front end course by Anar Ansarova. I will use <abbr title="Java Script">JS</abbr>,
           <abbr title="Cascading Style Sheets">CSS</abbr> and <acronym title="HyperText Markup Language">HTML</acronym></p>
       </section>
     </div>
     <br>
-    <div id="fav-quote" class="favourite-quote">
+    <div id="fav-quote" class="profile-information__favourite-quote">
       <p>My favourite quote from <cite>"Game of Thrones"</cite>. Lannister House motto:</p>
       <blockquote>
         Hear me Roar!
       </blockquote>
     </div>
-    <div class="header-info">
-      <div class="image-name">
+    <div class="profile-information__about-author">
+      <div class="profile-information__about-author__image-name">
         <img src="https://content.screencast.com/users/Ansarova/folders/Jing/media/2c7a4e7b-519a-4677-b83f-82facdff8e5f/2018-10-16_1545.png"
           alt="Anar Ansarova photo" width="150" height="150" />
       </div>
-      <div id="profile-info" class="profile-info">
+      <div id="profile-info" class="profile-information__about-author__author-name-title">
         <h2>Anar Ansarova</h2>
         <p><strong>Job profile:</strong> Senior Software Testing Engineer <sub>from June 2018</sub></p>
         <p><strong>Unit:</strong> Mobile Testing Team</p>
         <p><strong>Primary Skill:</strong> Functional Testing</p>
         <p><strong>Country, City:</strong> Kazakhstan, Karaganda</p>
       </div>
-      <div class="city-picture">
+      <div class="profile-information__about-author__city-picture">
         <img src="https://pandaland.kz/airdraw/499e00d1ad66eca088ca97a8b96b77fc.jpg/550/0" alt="Karaganda photo" width="350"
           height="150" />
       </div>
     </div>
     <br>
-    <div class="workload">
+    <div class="profile-information__workload">
       <table class="table table-responsive table-striped table-bordered">
         <thead class="thead-dark">
           <tr>
@@ -114,41 +117,42 @@
       </table>
     </div>
     <br>
-    <div class="skill-list">
-      <button id="show-message" class="show-message">Show skills</button>
+    
+    <div class="profile-information__skill-list">
+      <button id="show-message" class="profile-information__skill-list__show-message">Show skills</button>
       <p id="primary-skills"></p>
     </div>
     <br>
-    <div class="sick-leave">
+    <div class="profile-information__sick-leave">
       <p id="sick-leave"></p>
-      <button id="take-sick-leave" class="take-sick-leave">Take sick leave</button>
-      <button id="update-sick" class="update-sick">Update sick leave days</button>
+      <button id="take-sick-leave" class="profile-information__sick-leave__take-sick-leave">Take sick leave</button>
+      <button id="update-sick" class="profile-information__sick-leave__update-sick">Update sick leave days</button>
     </div>
     <br>
-    <div class="manager-list">
+    <div class="profile-information__manager-list">
       <p id="managers"></p>
-      <button id="show-rm" class="show-rm">Show RM</button>
-      <button id="show-um" class="show-um">Show UM</button>
+      <button id="show-rm" class="profile-information__manager-list__show-rm">Show RM</button>
+      <button id="show-um" class="profile-information__manager-list__show-um">Show UM</button>
     </div>
     <br>
-    <div class="nav-gallery">
-      <button id="navigate-gallery" class="navigate-gallery">Open gallery</button>
+    <div class="profile-information__navigation">
+      <button id="navigate-gallery" class="profile-information__navigation_open-page">Open gallery</button>
     </div>
     <br>
-    <div class="nav-gallery">
-      <button id="navigate-video-gallery" class="navigate-gallery">Open video gallery</button>
+    <div class="profile-information__navigation">
+      <button id="navigate-video-gallery" class="profile-information__navigation_open-page">Open video gallery</button>
     </div>
     <br>
-    <div class="nav-gallery">
-      <button id="navigate-blog-video" class="navigate-gallery">Open personal blog</button>
+    <div class="profile-information__navigation">
+      <button id="navigate-blog-video" class="profile-information__navigation_open-page">Open personal blog</button>
     </div>
     <br>
-    <div class="nav-gallery">
-      <button id="navigate-survey" class="navigate-gallery">Open Survey page</button>
+    <div class="profile-information__navigation">
+      <button id="navigate-survey" class="profile-information__navigation_open-page">Open Survey page</button>
     </div>
   </div>
   <br>
-  <div class="video-space">
+  <div class="video-content">
     <video id="vid" poster="img/epam20.png" width="700">
       <source src="media/epam20.mp4" type="video/mp4">
       <source src="media/epam20.webm" type="video/webm">

@@ -7,8 +7,8 @@ script.src = 'http://code.jquery.com/jquery-1.8.3.js';
 document.head.appendChild(script);
 
 var $window = $(window);
-var $videoWrap = $('.blog-video');
-var $video = $('.video');
+var $videoWrap = $('.personal-blog__video');
+var $video = $('.personal-blog__video iframe');
 var videoHeight = $video.outerHeight();
 
 $window.on('scroll', function () {
@@ -17,9 +17,9 @@ $window.on('scroll', function () {
 
     if (windowScrollTop > videoBottom) {
         $videoWrap.height(videoHeight);
-        $video.addClass('stuck');
+        $video.addClass('personal-blog__video_stuck');
     } else {
         $videoWrap.height('auto');
-        $video.removeClass('stuck');
+        $video.removeClass('personal-blog__video_stuck');
     }
 });
