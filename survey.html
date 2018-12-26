@@ -3,46 +3,46 @@
 
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css\bootstrap.css">
-  <link rel="stylesheet" href="css\bootstrap-grid.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Survey page</title>
-  <meta name="description" content="Front end student work">
-  <meta name="keywords" content="HTML,CSS,JavaScript">
-  <meta name="author" content="Anar Ansarova">
-  <meta charset="UTF-8">
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css\bootstrap.css">
+    <link rel="stylesheet" href="css\bootstrap-grid.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey page</title>
+    <meta name="description" content="Front end student work">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Anar Ansarova">
+    <meta charset="UTF-8">
 </head>
 
 <body>
     <div class="header">
         <input type="checkbox" class="header_open-sidebar-menu" id="open-sidebar-menu">
         <label for="open-sidebar-menu" class="header__sidebar-icon-toggle">
-          <span class="spinner diagonal-part-1"></span>
-          <span class="spinner horizontal"></span>
-          <span class="spinner diagonal-part-2"></span>
+            <span class="spinner diagonal-part-1"></span>
+            <span class="spinner horizontal"></span>
+            <span class="spinner diagonal-part-2"></span>
         </label>
         <div id="sidebar-menu" class="header__sidebar-menu">
-          <ul class="header__sidebar-menu-inner">
-            <li><a href="index.html">Profile page</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="videogallery.html">Video Gallery</a></li>
-            <li><a href="personalblog.html">Personal blog</a></li>
-            <li><a href="survey.html">Survey</a></li>
-            <li><a href="https://learn.epam.com/">Learn</a></li>
-            <li><a href="https://heroes.epam.com/">Heroes</a></li>
-            <li><a href="https://telescope.epam.com/who/Anar_Ansarova">Telescope</a></li>
-          </ul>
+            <ul class="header__sidebar-menu-inner">
+                <li><a href="index.html">Profile page</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="videogallery.html">Video Gallery</a></li>
+                <li><a href="personalblog.html">Personal blog</a></li>
+                <li><a href="survey.html">Survey</a></li>
+                <li><a href="https://learn.epam.com/">Learn</a></li>
+                <li><a href="https://heroes.epam.com/">Heroes</a></li>
+                <li><a href="https://telescope.epam.com/who/Anar_Ansarova">Telescope</a></li>
+            </ul>
         </div>
-      </div>
+    </div>
     <div class="survey">
 
 
@@ -51,8 +51,8 @@
         </div>
         <form id="formId">
             <div class="form-group">
-                <label for="emailControlInput">Enter your email</label>
-                <input type="email" class="form-control" id="emailControlInput" placeholder="name@example.com" required>
+                <label for="loginControlInput">Enter your login</label>
+                <input type="email" class="form-control" id="loginControlInput" placeholder="login name" required>
 
             </div>
             <label for="genderIdentification">Your gender</label>
@@ -79,7 +79,7 @@
             </div>
             <div class="form-group">
                 <label for="interestTextArea">Own variant</label>
-                <textarea class="form-control" id="interestTextArea" rows="3" maxlength="100" required></textarea>
+                <textarea class="form-control" id="interestTextArea" rows="3" maxlength="100"></textarea>
             </div>
             <label for="favouriteSeason">Your favourite season</label>
             <div id="favouriteSeason">
@@ -113,10 +113,8 @@
                 </div>
             </div>
             <br>
-            <button type="submit" class="btn btn-success">
-                Check
-            </button>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+
+            <button type="button" class="btn btn-primary" id="submitButton">
                 Submit
             </button>
 
@@ -151,7 +149,11 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
+    <script src="script3.js">
 
+    </script>
+
+    <script src="js\bootstrap.min.js"></script>
 </body>
 
 </html>
