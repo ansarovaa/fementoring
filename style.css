@@ -225,6 +225,7 @@ input[type=checkbox]:checked~.header__sidebar-icon-toggle>.diagonal-part-2 {
   text-align: center;
 }
 
+
 .navigate-gallery a:link {
   text-decoration: none;
   color: #FFFFFF;
