@@ -3,6 +3,13 @@
   padding: 0;
 }
 
+@media (max-width: 767px) {
+  .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 body {
   font-family: "Source Sans Pro", "sans-serif";
   background-color: #F8F8F8;
@@ -20,6 +27,8 @@ body {
   overflow: hidden;
   z-index: 10;
 }
+
+
 
 .header__sidebar-menu {
   position: fixed;
@@ -155,10 +164,10 @@ input[type=checkbox]:checked~.header__sidebar-icon-toggle>.diagonal-part-2 {
 }
 
 .profile-information {
-  padding: 100px 0 40px 10px;
+  padding: 100px 10px 40px 10px;
 }
 
-.profile-information__about-project{
+.profile-information__about-project {
   text-align: center;
 }
 
@@ -214,7 +223,7 @@ input[type=checkbox]:checked~.header__sidebar-icon-toggle>.diagonal-part-2 {
 .profile-information__workload td {
   padding: 10px;
   text-align: center;
- }
+}
 
 .navigate-gallery a:link {
   text-decoration: none;
@@ -241,10 +250,13 @@ input[type=checkbox]:checked~.header__sidebar-icon-toggle>.diagonal-part-2 {
 .profile-information__manager-list,
 .profile-information__workload,
 .profile-information__navigation {
-  padding: 30px;
+  overflow-x: hidden;
+  text-align: center;
+  padding: 20px;
   border-style: groove;
   background-color: #FFFFFF;
 }
+
 
 .profile-information__skill-list:hover,
 .profile-information__sick-leave:hover,
@@ -277,6 +289,7 @@ input[type=checkbox]:checked~.header__sidebar-icon-toggle>.diagonal-part-2 {
   border: none;
 }
 
+
 .video-content video {
   border-style: groove;
   background-color: #FFFFFF;
@@ -287,7 +300,7 @@ button:hover {
   cursor: pointer;
 }
 
-.container {
+.container.images-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -295,16 +308,17 @@ button:hover {
   padding: 100px 0 100px 10px;
 }
 
-.container>div {
+.container.images-gallery>div {
   margin: 10px;
   border: solid;
   border-color: #F8F8F8;
 }
 
-.container>div:hover {
+.container.images-gallery>div:hover {
   border-color: #a3c644;
   cursor: pointer;
 }
+
 
 .footer {
   position: fixed;
